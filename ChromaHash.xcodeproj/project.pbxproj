@@ -1,0 +1,469 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B19AC8AC16F38FD00077B5BA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B19AC8AB16F38FD00077B5BA /* UIKit.framework */; };
+		B19AC8AE16F38FD00077B5BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B19AC8AD16F38FD00077B5BA /* Foundation.framework */; };
+		B19AC8B016F38FD00077B5BA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B19AC8AF16F38FD00077B5BA /* CoreGraphics.framework */; };
+		B19AC8B616F38FD00077B5BA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B19AC8B416F38FD00077B5BA /* InfoPlist.strings */; };
+		B19AC8B816F38FD00077B5BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B19AC8B716F38FD00077B5BA /* main.m */; };
+		B19AC8BC16F38FD00077B5BA /* CHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B19AC8BB16F38FD00077B5BA /* CHAppDelegate.m */; };
+		B19AC8BE16F38FD00077B5BA /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B19AC8BD16F38FD00077B5BA /* Default.png */; };
+		B19AC8C016F38FD00077B5BA /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B19AC8BF16F38FD00077B5BA /* Default@2x.png */; };
+		B19AC8C216F38FD00077B5BA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B19AC8C116F38FD00077B5BA /* Default-568h@2x.png */; };
+		B19AC8C516F38FD00077B5BA /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B19AC8C316F38FD00077B5BA /* MainStoryboard.storyboard */; };
+		B19AC8C816F38FD00077B5BA /* CHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B19AC8C716F38FD00077B5BA /* CHViewController.m */; };
+		B19AC8D016F38FD00077B5BA /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B19AC8CF16F38FD00077B5BA /* SenTestingKit.framework */; };
+		B19AC8D116F38FD00077B5BA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B19AC8AB16F38FD00077B5BA /* UIKit.framework */; };
+		B19AC8D216F38FD00077B5BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B19AC8AD16F38FD00077B5BA /* Foundation.framework */; };
+		B19AC8DA16F38FD00077B5BA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B19AC8D816F38FD00077B5BA /* InfoPlist.strings */; };
+		B19AC8DD16F38FD00077B5BA /* ChromaHashTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B19AC8DC16F38FD00077B5BA /* ChromaHashTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B19AC8D316F38FD00077B5BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B19AC8A016F38FD00077B5BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B19AC8A716F38FD00077B5BA;
+			remoteInfo = ChromaHash;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B19AC8A816F38FD00077B5BA /* ChromaHash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChromaHash.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B19AC8AB16F38FD00077B5BA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B19AC8AD16F38FD00077B5BA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B19AC8AF16F38FD00077B5BA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B19AC8B316F38FD00077B5BA /* ChromaHash-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ChromaHash-Info.plist"; sourceTree = "<group>"; };
+		B19AC8B516F38FD00077B5BA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B19AC8B716F38FD00077B5BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B19AC8B916F38FD00077B5BA /* ChromaHash-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChromaHash-Prefix.pch"; sourceTree = "<group>"; };
+		B19AC8BA16F38FD00077B5BA /* CHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHAppDelegate.h; sourceTree = "<group>"; };
+		B19AC8BB16F38FD00077B5BA /* CHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHAppDelegate.m; sourceTree = "<group>"; };
+		B19AC8BD16F38FD00077B5BA /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		B19AC8BF16F38FD00077B5BA /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		B19AC8C116F38FD00077B5BA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		B19AC8C416F38FD00077B5BA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		B19AC8C616F38FD00077B5BA /* CHViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CHViewController.h; sourceTree = "<group>"; };
+		B19AC8C716F38FD00077B5BA /* CHViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CHViewController.m; sourceTree = "<group>"; };
+		B19AC8CE16F38FD00077B5BA /* ChromaHashTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChromaHashTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B19AC8CF16F38FD00077B5BA /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		B19AC8D716F38FD00077B5BA /* ChromaHashTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ChromaHashTests-Info.plist"; sourceTree = "<group>"; };
+		B19AC8D916F38FD00077B5BA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B19AC8DB16F38FD00077B5BA /* ChromaHashTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChromaHashTests.h; sourceTree = "<group>"; };
+		B19AC8DC16F38FD00077B5BA /* ChromaHashTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChromaHashTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B19AC8A516F38FD00077B5BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B19AC8AC16F38FD00077B5BA /* UIKit.framework in Frameworks */,
+				B19AC8AE16F38FD00077B5BA /* Foundation.framework in Frameworks */,
+				B19AC8B016F38FD00077B5BA /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B19AC8CA16F38FD00077B5BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B19AC8D016F38FD00077B5BA /* SenTestingKit.framework in Frameworks */,
+				B19AC8D116F38FD00077B5BA /* UIKit.framework in Frameworks */,
+				B19AC8D216F38FD00077B5BA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B19AC89F16F38FD00077B5BA = {
+			isa = PBXGroup;
+			children = (
+				B19AC8B116F38FD00077B5BA /* ChromaHash */,
+				B19AC8D516F38FD00077B5BA /* ChromaHashTests */,
+				B19AC8AA16F38FD00077B5BA /* Frameworks */,
+				B19AC8A916F38FD00077B5BA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B19AC8A916F38FD00077B5BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B19AC8A816F38FD00077B5BA /* ChromaHash.app */,
+				B19AC8CE16F38FD00077B5BA /* ChromaHashTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B19AC8AA16F38FD00077B5BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B19AC8AB16F38FD00077B5BA /* UIKit.framework */,
+				B19AC8AD16F38FD00077B5BA /* Foundation.framework */,
+				B19AC8AF16F38FD00077B5BA /* CoreGraphics.framework */,
+				B19AC8CF16F38FD00077B5BA /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B19AC8B116F38FD00077B5BA /* ChromaHash */ = {
+			isa = PBXGroup;
+			children = (
+				B19AC8BA16F38FD00077B5BA /* CHAppDelegate.h */,
+				B19AC8BB16F38FD00077B5BA /* CHAppDelegate.m */,
+				B19AC8C316F38FD00077B5BA /* MainStoryboard.storyboard */,
+				B19AC8C616F38FD00077B5BA /* CHViewController.h */,
+				B19AC8C716F38FD00077B5BA /* CHViewController.m */,
+				B19AC8B216F38FD00077B5BA /* Supporting Files */,
+			);
+			path = ChromaHash;
+			sourceTree = "<group>";
+		};
+		B19AC8B216F38FD00077B5BA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B19AC8B316F38FD00077B5BA /* ChromaHash-Info.plist */,
+				B19AC8B416F38FD00077B5BA /* InfoPlist.strings */,
+				B19AC8B716F38FD00077B5BA /* main.m */,
+				B19AC8B916F38FD00077B5BA /* ChromaHash-Prefix.pch */,
+				B19AC8BD16F38FD00077B5BA /* Default.png */,
+				B19AC8BF16F38FD00077B5BA /* Default@2x.png */,
+				B19AC8C116F38FD00077B5BA /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B19AC8D516F38FD00077B5BA /* ChromaHashTests */ = {
+			isa = PBXGroup;
+			children = (
+				B19AC8DB16F38FD00077B5BA /* ChromaHashTests.h */,
+				B19AC8DC16F38FD00077B5BA /* ChromaHashTests.m */,
+				B19AC8D616F38FD00077B5BA /* Supporting Files */,
+			);
+			path = ChromaHashTests;
+			sourceTree = "<group>";
+		};
+		B19AC8D616F38FD00077B5BA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B19AC8D716F38FD00077B5BA /* ChromaHashTests-Info.plist */,
+				B19AC8D816F38FD00077B5BA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B19AC8A716F38FD00077B5BA /* ChromaHash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B19AC8E016F38FD00077B5BA /* Build configuration list for PBXNativeTarget "ChromaHash" */;
+			buildPhases = (
+				B19AC8A416F38FD00077B5BA /* Sources */,
+				B19AC8A516F38FD00077B5BA /* Frameworks */,
+				B19AC8A616F38FD00077B5BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChromaHash;
+			productName = ChromaHash;
+			productReference = B19AC8A816F38FD00077B5BA /* ChromaHash.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B19AC8CD16F38FD00077B5BA /* ChromaHashTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B19AC8E316F38FD00077B5BA /* Build configuration list for PBXNativeTarget "ChromaHashTests" */;
+			buildPhases = (
+				B19AC8C916F38FD00077B5BA /* Sources */,
+				B19AC8CA16F38FD00077B5BA /* Frameworks */,
+				B19AC8CB16F38FD00077B5BA /* Resources */,
+				B19AC8CC16F38FD00077B5BA /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B19AC8D416F38FD00077B5BA /* PBXTargetDependency */,
+			);
+			name = ChromaHashTests;
+			productName = ChromaHashTests;
+			productReference = B19AC8CE16F38FD00077B5BA /* ChromaHashTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B19AC8A016F38FD00077B5BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CH;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = thingsdoer;
+			};
+			buildConfigurationList = B19AC8A316F38FD00077B5BA /* Build configuration list for PBXProject "ChromaHash" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B19AC89F16F38FD00077B5BA;
+			productRefGroup = B19AC8A916F38FD00077B5BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B19AC8A716F38FD00077B5BA /* ChromaHash */,
+				B19AC8CD16F38FD00077B5BA /* ChromaHashTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B19AC8A616F38FD00077B5BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B19AC8B616F38FD00077B5BA /* InfoPlist.strings in Resources */,
+				B19AC8BE16F38FD00077B5BA /* Default.png in Resources */,
+				B19AC8C016F38FD00077B5BA /* Default@2x.png in Resources */,
+				B19AC8C216F38FD00077B5BA /* Default-568h@2x.png in Resources */,
+				B19AC8C516F38FD00077B5BA /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B19AC8CB16F38FD00077B5BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B19AC8DA16F38FD00077B5BA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B19AC8CC16F38FD00077B5BA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B19AC8A416F38FD00077B5BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B19AC8B816F38FD00077B5BA /* main.m in Sources */,
+				B19AC8BC16F38FD00077B5BA /* CHAppDelegate.m in Sources */,
+				B19AC8C816F38FD00077B5BA /* CHViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B19AC8C916F38FD00077B5BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B19AC8DD16F38FD00077B5BA /* ChromaHashTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B19AC8D416F38FD00077B5BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B19AC8A716F38FD00077B5BA /* ChromaHash */;
+			targetProxy = B19AC8D316F38FD00077B5BA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B19AC8B416F38FD00077B5BA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B19AC8B516F38FD00077B5BA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B19AC8C316F38FD00077B5BA /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B19AC8C416F38FD00077B5BA /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		B19AC8D816F38FD00077B5BA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B19AC8D916F38FD00077B5BA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B19AC8DE16F38FD00077B5BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B19AC8DF16F38FD00077B5BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B19AC8E116F38FD00077B5BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ChromaHash/ChromaHash-Prefix.pch";
+				INFOPLIST_FILE = "ChromaHash/ChromaHash-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B19AC8E216F38FD00077B5BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ChromaHash/ChromaHash-Prefix.pch";
+				INFOPLIST_FILE = "ChromaHash/ChromaHash-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B19AC8E416F38FD00077B5BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ChromaHash.app/ChromaHash";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ChromaHash/ChromaHash-Prefix.pch";
+				INFOPLIST_FILE = "ChromaHashTests/ChromaHashTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		B19AC8E516F38FD00077B5BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ChromaHash.app/ChromaHash";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ChromaHash/ChromaHash-Prefix.pch";
+				INFOPLIST_FILE = "ChromaHashTests/ChromaHashTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B19AC8A316F38FD00077B5BA /* Build configuration list for PBXProject "ChromaHash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B19AC8DE16F38FD00077B5BA /* Debug */,
+				B19AC8DF16F38FD00077B5BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B19AC8E016F38FD00077B5BA /* Build configuration list for PBXNativeTarget "ChromaHash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B19AC8E116F38FD00077B5BA /* Debug */,
+				B19AC8E216F38FD00077B5BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B19AC8E316F38FD00077B5BA /* Build configuration list for PBXNativeTarget "ChromaHashTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B19AC8E416F38FD00077B5BA /* Debug */,
+				B19AC8E516F38FD00077B5BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B19AC8A016F38FD00077B5BA /* Project object */;
+}
