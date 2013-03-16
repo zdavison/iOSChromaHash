@@ -11,6 +11,15 @@ Requirements
 
 iOS5, ARC
 
+Installation
+------------
+You need the two files in CHTextField/.
+
+```objective-c
+CHTextField.h
+CHTextField.m
+```
+
 Usage
 ------------
 
