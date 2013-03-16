@@ -25,6 +25,7 @@ textField.maskPath = nil;                 // allows you to provide a layer mask 
                                           // if your textField.borderStyle is UITextBorderStyleRoundedRect,
                                           // and this property is not set, the textField will mask appropriately
                                           // for the default UITextField style
+```
 
 Credits
 ------------
