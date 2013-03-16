@@ -23,6 +23,9 @@
 		B19AC8D216F38FD00077B5BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B19AC8AD16F38FD00077B5BA /* Foundation.framework */; };
 		B19AC8DA16F38FD00077B5BA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B19AC8D816F38FD00077B5BA /* InfoPlist.strings */; };
 		B19AC8DD16F38FD00077B5BA /* ChromaHashTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B19AC8DC16F38FD00077B5BA /* ChromaHashTests.m */; };
+		B19AC8E916F390320077B5BA /* CHTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B19AC8E816F390320077B5BA /* CHTextField.m */; };
+		B19AC8EA16F390320077B5BA /* CHTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B19AC8E816F390320077B5BA /* CHTextField.m */; };
+		B1A6CE5816F48FB800931FD0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1A6CE5716F48FB800931FD0 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,9 @@
 		B19AC8D916F38FD00077B5BA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B19AC8DB16F38FD00077B5BA /* ChromaHashTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChromaHashTests.h; sourceTree = "<group>"; };
 		B19AC8DC16F38FD00077B5BA /* ChromaHashTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChromaHashTests.m; sourceTree = "<group>"; };
+		B19AC8E716F390310077B5BA /* CHTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHTextField.h; sourceTree = "<group>"; };
+		B19AC8E816F390320077B5BA /* CHTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHTextField.m; sourceTree = "<group>"; };
+		B1A6CE5716F48FB800931FD0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1A6CE5816F48FB800931FD0 /* QuartzCore.framework in Frameworks */,
 				B19AC8AC16F38FD00077B5BA /* UIKit.framework in Frameworks */,
 				B19AC8AE16F38FD00077B5BA /* Foundation.framework in Frameworks */,
 				B19AC8B016F38FD00077B5BA /* CoreGraphics.framework in Frameworks */,
@@ -87,6 +94,7 @@
 		B19AC89F16F38FD00077B5BA = {
 			isa = PBXGroup;
 			children = (
+				B1A6CE5716F48FB800931FD0 /* QuartzCore.framework */,
 				B19AC8B116F38FD00077B5BA /* ChromaHash */,
 				B19AC8D516F38FD00077B5BA /* ChromaHashTests */,
 				B19AC8AA16F38FD00077B5BA /* Frameworks */,
@@ -117,6 +125,7 @@
 		B19AC8B116F38FD00077B5BA /* ChromaHash */ = {
 			isa = PBXGroup;
 			children = (
+				B19AC8E616F390200077B5BA /* CHTextField */,
 				B19AC8BA16F38FD00077B5BA /* CHAppDelegate.h */,
 				B19AC8BB16F38FD00077B5BA /* CHAppDelegate.m */,
 				B19AC8C316F38FD00077B5BA /* MainStoryboard.storyboard */,
@@ -158,6 +167,15 @@
 				B19AC8D816F38FD00077B5BA /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B19AC8E616F390200077B5BA /* CHTextField */ = {
+			isa = PBXGroup;
+			children = (
+				B19AC8E716F390310077B5BA /* CHTextField.h */,
+				B19AC8E816F390320077B5BA /* CHTextField.m */,
+			);
+			path = CHTextField;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +292,7 @@
 				B19AC8B816F38FD00077B5BA /* main.m in Sources */,
 				B19AC8BC16F38FD00077B5BA /* CHAppDelegate.m in Sources */,
 				B19AC8C816F38FD00077B5BA /* CHViewController.m in Sources */,
+				B19AC8E916F390320077B5BA /* CHTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B19AC8DD16F38FD00077B5BA /* ChromaHashTests.m in Sources */,
+				B19AC8EA16F390320077B5BA /* CHTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +474,7 @@
 				B19AC8E216F38FD00077B5BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B19AC8E316F38FD00077B5BA /* Build configuration list for PBXNativeTarget "ChromaHashTests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +483,7 @@
 				B19AC8E516F38FD00077B5BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

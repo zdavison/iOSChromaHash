@@ -26,4 +26,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - UI events
+-(IBAction)plusButtonPressed:(id)sender{
+    if(self.textField.barCount < 3)
+        self.textField.barCount++;
+}
+
+-(IBAction)minusButtonPressed:(id)sender{
+    if(self.textField.barCount > 1)
+        self.textField.barCount--;
+}
+
 @end

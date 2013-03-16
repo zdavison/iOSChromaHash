@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CHTextField.h"
 
 @interface CHViewController : UIViewController
+
+@property(nonatomic,weak)IBOutlet CHTextField *textField;
+
+-(IBAction)plusButtonPressed:(id)sender;
+-(IBAction)minusButtonPressed:(id)sender;
 
 @end
