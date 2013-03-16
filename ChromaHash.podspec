@@ -9,4 +9,5 @@ Pod::Spec.new do |s|
   s.source_files = 'ChromaHash/CHTextField/CHTextField.{h,m}'
   s.public_header_files = 'ChromaHash/CHTextField/CHTextField.h'
   s.requires_arc = true
+  s.platform     = :ios, '5.0'
 end
