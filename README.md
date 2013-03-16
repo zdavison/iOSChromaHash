@@ -7,13 +7,13 @@ A port of Matt Thompsons ChromaHash JS secure password field. ( https://github.c
 
 
 Requirements
-=============
+------------
 
 iOS5
 ARC
 
 Usage
-=============
+------------
 
 Use it like a regular textfield, can be used from Interface Builder or in code. Has a few additional settings:
 
@@ -28,5 +28,5 @@ textField.maskPath = nil;                 // allows you to provide a layer mask 
                                           // for the default UITextField style
 
 Credits
-=============
+------------
 Original concept by Matt Thompson.
