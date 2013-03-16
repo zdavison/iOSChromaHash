@@ -3,7 +3,7 @@ iOSChromaHash
 
 A port of Matt Thompsons ChromaHash JS secure password field. ( https://github.com/mattt/Chroma-Hash/ )
 
-[[chromahash.png]]
+![iOS Simulator Preview](chromahash.png)
 
 
 Requirements
