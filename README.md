@@ -3,17 +3,16 @@ iOSChromaHash
 
 A port of Matt Thompsons ChromaHash JS secure password field. ( https://github.com/mattt/Chroma-Hash/ )
 
-[[chromahash.png]]
+![iOS Simulator Preview](chromahash.png)
 
 
 Requirements
-=============
+------------
 
-iOS5
-ARC
+iOS5, ARC
 
 Usage
-=============
+------------
 
 Use it like a regular textfield, can be used from Interface Builder or in code. Has a few additional settings:
 
@@ -26,7 +25,8 @@ textField.maskPath = nil;                 // allows you to provide a layer mask 
                                           // if your textField.borderStyle is UITextBorderStyleRoundedRect,
                                           // and this property is not set, the textField will mask appropriately
                                           // for the default UITextField style
+```
 
 Credits
-=============
+------------
 Original concept by Matt Thompson.
