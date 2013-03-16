@@ -28,7 +28,7 @@
 
 #pragma mark - UI events
 -(IBAction)plusButtonPressed:(id)sender{
-    if(self.textField.barCount < 3)
+    if(self.textField.barCount < 4)
         self.textField.barCount++;
 }
 

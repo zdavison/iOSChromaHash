@@ -17,7 +17,7 @@
                                     <constraint firstAttribute="width" constant="153" id="LBM-Sy-rS8"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FO5-eu-0hB">
                                 <constraints>
@@ -49,13 +49,13 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="Tse-aM-SeO" secondAttribute="bottom" constant="119" id="9AW-43-OhN"/>
+                            <constraint firstItem="i8M-4H-ces" firstAttribute="top" secondItem="3" secondAttribute="top" constant="75" id="4EE-w2-tFB"/>
                             <constraint firstItem="Tse-aM-SeO" firstAttribute="trailing" secondItem="FO5-eu-0hB" secondAttribute="trailing" type="default" id="CyG-tg-AvT"/>
                             <constraint firstItem="Tse-aM-SeO" firstAttribute="leading" secondItem="FO5-eu-0hB" secondAttribute="leading" type="default" id="JHK-0u-xHi"/>
-                            <constraint firstItem="i8M-4H-ces" firstAttribute="centerY" secondItem="3" secondAttribute="centerY" type="default" id="NPF-cN-cXg"/>
                             <constraint firstItem="Tse-aM-SeO" firstAttribute="top" secondItem="FO5-eu-0hB" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="SeF-Cp-ori"/>
+                            <constraint firstItem="FO5-eu-0hB" firstAttribute="top" secondItem="3" secondAttribute="top" constant="151" id="Tzd-uJ-146"/>
                             <constraint firstItem="FO5-eu-0hB" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="Vrh-Nq-AP9"/>
                             <constraint firstItem="FO5-eu-0hB" firstAttribute="centerX" secondItem="i8M-4H-ces" secondAttribute="centerX" type="default" id="oGU-mY-GWG"/>
                         </constraints>

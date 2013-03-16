@@ -23,6 +23,7 @@
     self.barCount = 3;
     self.barWidth = 10;
     self.salt = @"twitter: @thingsdoer";
+    
     [self addTarget:self action:@selector(updateColors:) forControlEvents:UIControlEventAllEditingEvents];
 }
 
@@ -39,25 +40,34 @@
 
 #pragma mark - Get/Set
 -(void)setBarCount:(int)barCount{
-    NSAssert(barCount > 1 && barCount <= 4, @"numberOfBars must be between 1 and 4");
+    NSAssert(barCount >= 1 && barCount <= 4, @"numberOfBars must be between 1 and 4");
     _barCount = barCount;
     self.chromaView = nil;
+    [self setNeedsLayout];
 }
 
 -(void)setBarWidth:(float)barWidth{
     _barWidth = barWidth;
     self.chromaView = nil;
-}
-
--(void)setChromaView:(UIView *)chromaView{
-    _chromaView = chromaView;
     [self setNeedsLayout];
-    [self updateColors:self];
 }
 
 -(void)setSalt:(NSString *)salt{
     _salt = salt;
     [self updateColors:self];
+}
+
+-(void)setChromaView:(UIView *)chromaView{
+    [_chromaView removeFromSuperview];
+    _chromaView = chromaView;
+}
+
+-(void)setMaskPath:(UIBezierPath *)maskPath{
+    _maskPath = maskPath;
+    CAShapeLayer *maskLayer = [CAShapeLayer layer];
+    maskLayer.frame = self.chromaView.bounds;
+    maskLayer.path = maskPath.CGPath;
+    self.chromaView.layer.mask = maskLayer;
 }
 
 #pragma mark - Overrides
@@ -67,7 +77,7 @@
         self.chromaView = [[UIView alloc] initWithFrame:CGRectMake((self.bounds.size.width - self.chromaWidth),
                                                                    0,
                                                                    self.chromaWidth,
-                                                                   self.bounds.size.width)];
+                                                                   self.bounds.size.height)];
         [self addSubview:self.chromaView];
         self.chromaLayers = [NSMutableArray array];
         for(int i=0;i<self.barCount;i++){
@@ -80,6 +90,17 @@
             [self.chromaLayers addObject:layer];
         }
     }
+    
+    //if we dont have a maskpath set, and this is the default textfield, let's set one.
+    if(!self.maskPath && self.borderStyle == UITextBorderStyleRoundedRect){
+        CGRect maskRect = self.chromaView.bounds;
+        maskRect.size.height -= 1;
+        self.maskPath = [UIBezierPath bezierPathWithRoundedRect:maskRect
+                                              byRoundingCorners:(UIRectCornerTopRight | UIRectCornerBottomRight)
+                                                    cornerRadii:CGSizeMake(7, 7)];
+    }
+    
+    [self updateColors:self];
 }
 
 #pragma mark -
@@ -99,20 +120,6 @@
 -(float)chromaWidth{
     return self.barWidth * self.barCount;
 }
-
-#pragma mark - Drawing
-//-(void)drawRect:(CGRect)rect{
-//    CGContextRef c = UIGraphicsGetCurrentContext();
-//    for(int i=0;i<self.barCount;i++){
-//        CGRect bar = CGRectMake((rect.size.width - self.chromaWidth) + (i * self.barWidth),
-//                                0,
-//                                self.barWidth,
-//                                rect.size.width);
-//        UIColor *color = (self.colors.count >= i+1) ? self.colors[i] : [UIColor clearColor];
-//        [color set];
-//        CGContextFillRect(c, bar);
-//    }
-//}
 
 #pragma mark - Helpers
 NS_RETURNS_NOT_RETAINED NSString* md5_string(NSString *string){

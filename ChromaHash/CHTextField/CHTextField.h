@@ -13,5 +13,6 @@
 @property(nonatomic,assign)int barCount;
 @property(nonatomic,assign)float barWidth;
 @property(nonatomic,strong)NSString *salt;
+@property(nonatomic,strong)UIBezierPath *maskPath;
 
 @end
