@@ -9,8 +9,7 @@ A port of Matt Thompsons ChromaHash JS secure password field. ( https://github.c
 Requirements
 ------------
 
-iOS5
-ARC
+iOS5, ARC
 
 Usage
 ------------
