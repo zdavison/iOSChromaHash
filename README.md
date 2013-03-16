@@ -12,11 +12,15 @@ Requirements
 iOS5, ARC
 
 Installation
-------------
-You need the two files in CHTextField/.
+---------------------
+Installation can be done using [CocoaPods](http://cocoapods.org):
+add `pod 'ChromaHash'` to your `Podfile`, then run `pod install`.
 
-```objective-c
-CHTextField.h
+or
+
+Clone the repository, and add the following files to your project:
+```
+CHTextField.h 
 CHTextField.m
 ```
 
