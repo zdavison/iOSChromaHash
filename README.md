@@ -11,6 +11,19 @@ Requirements
 
 iOS5, ARC
 
+Installation
+---------------------
+Installation can be done using [CocoaPods](http://cocoapods.org):
+add `pod 'ChromaHash'` to your `Podfile`, then run `pod install`.
+
+or
+
+Clone the repository, and add the following files to your project:
+```
+CHTextField.h 
+CHTextField.m
+```
+
 Usage
 ------------
 
