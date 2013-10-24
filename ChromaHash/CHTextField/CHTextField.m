@@ -115,6 +115,12 @@
             layer.backgroundColor = colorWithHex(hex).CGColor;
         }
     }
+    else{
+        for(int i=0;i<self.barCount;i++){
+            CALayer *layer = self.chromaLayers[i];
+            layer.backgroundColor = [UIColor clearColor].CGColor;
+        }
+    }
 }
 
 -(float)chromaWidth{
