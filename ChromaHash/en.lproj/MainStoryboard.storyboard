@@ -1,48 +1,46 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="CHViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uac-eh-XBY"/>
+                        <viewControllerLayoutGuide type="bottom" id="hgB-Ny-9TM"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="i8M-4H-ces" customClass="CHTextField">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="i8M-4H-ces" customClass="CHTextField">
+                                <rect key="frame" x="84" y="75" width="153" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="153" id="LBM-Sy-rS8"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FO5-eu-0hB">
+                                <rect key="frame" x="141" y="151" width="39" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="39" id="dwg-5i-Ifc"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="+">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="plusButtonPressed:" destination="2" eventType="touchUpInside" id="kBk-eV-6gK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tse-aM-SeO">
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <rect key="frame" x="141" y="189" width="39" height="30"/>
                                 <state key="normal" title="-">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="minusButtonPressed:" destination="2" eventType="touchUpInside" id="zxJ-FL-XCD"/>
@@ -52,12 +50,12 @@
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="i8M-4H-ces" firstAttribute="top" secondItem="3" secondAttribute="top" constant="75" id="4EE-w2-tFB"/>
-                            <constraint firstItem="Tse-aM-SeO" firstAttribute="trailing" secondItem="FO5-eu-0hB" secondAttribute="trailing" type="default" id="CyG-tg-AvT"/>
-                            <constraint firstItem="Tse-aM-SeO" firstAttribute="leading" secondItem="FO5-eu-0hB" secondAttribute="leading" type="default" id="JHK-0u-xHi"/>
-                            <constraint firstItem="Tse-aM-SeO" firstAttribute="top" secondItem="FO5-eu-0hB" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="SeF-Cp-ori"/>
+                            <constraint firstItem="Tse-aM-SeO" firstAttribute="trailing" secondItem="FO5-eu-0hB" secondAttribute="trailing" id="CyG-tg-AvT"/>
+                            <constraint firstItem="Tse-aM-SeO" firstAttribute="leading" secondItem="FO5-eu-0hB" secondAttribute="leading" id="JHK-0u-xHi"/>
+                            <constraint firstItem="Tse-aM-SeO" firstAttribute="top" secondItem="FO5-eu-0hB" secondAttribute="bottom" constant="8" symbolic="YES" id="SeF-Cp-ori"/>
                             <constraint firstItem="FO5-eu-0hB" firstAttribute="top" secondItem="3" secondAttribute="top" constant="151" id="Tzd-uJ-146"/>
-                            <constraint firstItem="FO5-eu-0hB" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="Vrh-Nq-AP9"/>
-                            <constraint firstItem="FO5-eu-0hB" firstAttribute="centerX" secondItem="i8M-4H-ces" secondAttribute="centerX" type="default" id="oGU-mY-GWG"/>
+                            <constraint firstItem="FO5-eu-0hB" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" id="Vrh-Nq-AP9"/>
+                            <constraint firstItem="FO5-eu-0hB" firstAttribute="centerX" secondItem="i8M-4H-ces" secondAttribute="centerX" id="oGU-mY-GWG"/>
                         </constraints>
                     </view>
                     <connections>
@@ -68,22 +66,6 @@
             </objects>
         </scene>
     </scenes>
-    <classes>
-        <class className="CHTextField" superclassName="UITextField">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CHTextField.h"/>
-        </class>
-        <class className="CHViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CHViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="minusButtonPressed:"/>
-                <relationship kind="action" name="plusButtonPressed:"/>
-                <relationship kind="outlet" name="textField" candidateClass="CHTextField"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

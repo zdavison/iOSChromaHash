@@ -23,7 +23,7 @@
     self.barCount = 3;
     self.barWidth = 10;
     self.salt = @"twitter: @thingsdoer";
-    
+
     [self addTarget:self action:@selector(updateColors:) forControlEvents:UIControlEventAllEditingEvents];
 }
 
@@ -44,6 +44,13 @@
     _barCount = barCount;
     self.chromaView = nil;
     [self setNeedsLayout];
+    [self performSelector:@selector(updateFieldEditorsWidth) withObject:nil afterDelay:0.01];
+}
+
+- (void)updateFieldEditorsWidth{
+    self.text = [self.text stringByAppendingString:@" "];
+    NSString *newString = [self.text substringToIndex:[self.text length]-1];
+    self.text = newString;
 }
 
 -(void)setBarWidth:(float)barWidth{
@@ -68,6 +75,42 @@
     maskLayer.frame = self.chromaView.bounds;
     maskLayer.path = maskPath.CGPath;
     self.chromaView.layer.mask = maskLayer;
+}
+
+#pragma mark - Insets
+- (CGRect)textRectForBounds:(CGRect)bounds {
+    CGRect rect = [super textRectForBounds:bounds];
+
+    if (self.clearButtonMode != UITextFieldViewModeNever) {
+        rect = CGRectMake(rect.origin.x,
+                          rect.origin.y,
+                          bounds.size.width - self.barCount*self.barWidth - 19 - (self.leftView != nil ? self.leftView.frame.size.width : 0),
+                          rect.size.height);
+    }
+    else{
+        rect = CGRectMake(rect.origin.x,
+                          rect.origin.y,
+                          bounds.size.width - self.barCount*self.barWidth - (self.leftView != nil ? self.leftView.frame.size.width : 0),
+                          rect.size.height);
+    }
+
+
+    return rect;
+}
+
+- (CGRect)editingRectForBounds:(CGRect)bounds {
+    return [self textRectForBounds:bounds];
+}
+
+- (CGRect)clearButtonRectForBounds:(CGRect)bounds {
+    CGRect rect = [super clearButtonRectForBounds:bounds];
+    if (self.clearButtonMode != UITextFieldViewModeNever) {
+        rect = CGRectMake(rect.origin.x - self.barWidth*self.barCount + 5,
+                          rect.origin.y,
+                          rect.size.width,
+                          rect.size.height);
+    }
+    return rect;
 }
 
 #pragma mark - Overrides
