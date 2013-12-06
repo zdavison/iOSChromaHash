@@ -84,13 +84,13 @@
     if (self.clearButtonMode != UITextFieldViewModeNever) {
         rect = CGRectMake(rect.origin.x,
                           rect.origin.y,
-                          bounds.size.width - self.barCount*self.barWidth - 19,
+                          bounds.size.width - self.barCount*self.barWidth - 19 - (self.leftView != nil ? self.leftView.frame.size.width : 0),
                           rect.size.height);
     }
     else{
         rect = CGRectMake(rect.origin.x,
                           rect.origin.y,
-                          bounds.size.width - self.barCount*self.barWidth,
+                          bounds.size.width - self.barCount*self.barWidth - (self.leftView != nil ? self.leftView.frame.size.width : 0),
                           rect.size.height);
     }
 

@@ -18,6 +18,13 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+
+
+    UIView *leftSizeView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 30, 30)];
+    leftSizeView.backgroundColor = [UIColor darkGrayColor];
+
+    self.textField.leftViewMode = UITextFieldViewModeAlways;
+    self.textField.leftView = leftSizeView;
 }
 
 - (void)didReceiveMemoryWarning
